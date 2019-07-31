@@ -1,0 +1,16 @@
+<% include ../partials/header.ejs %>
+<% if (categories.length > 0) { %>
+<ul>
+<% categories.forEach(function(category) { %>
+    <% if(!category.link) { %>
+    <li onclick="window.location.href='/post/<%= category.id %>'"><%= category.name %></li>
+    <% } else { %>
+    <li onclick="window.open('<%= category.link %>','_blank')"><%= category.name %></li>
+    <% } %>
+<% }); %>
+</ul>
+<% } else { %>
+<h4>This is empty sorry!</h4>
+<% }%>
+<a href="/">Go Back!</a>
+<% include ../partials/footer.ejs %>

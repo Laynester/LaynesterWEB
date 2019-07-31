@@ -1,0 +1,19 @@
+{
+  "name": "laynesterweb",
+  "version": "1.0.0",
+  "description": "LaynesterWEB",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "author": "Layne Balsters",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "node-sass-middleware": "^0.11.0"
+  }
+}
